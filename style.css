@@ -171,16 +171,31 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom:15px;
 }
-.services-list div a{
+.services-list div button{
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
     display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
+.services-list div p{
+    font-size:14px;
+} 
 .services-list div:hover{
     background: #ffb81c;
     transform: translateX(-10px);
+}
+.moreText{
+    display: none;
+}
+.text.show-more .moreText{
+    display: inline;
+}
+.text.show-more .dots{
+    display: none;
 }
 /*-------portfolio-------*/
 #porfolio{

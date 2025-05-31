@@ -73,8 +73,8 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
-                <p> I offer custom web design services that help individuals and businesss establish a strong online presence. My focus is on creating responsive, visually appealing, and user-friendly websites that align with your brand and goals.</p>
-                <a href="services/service.html">Learn more</a>
+                <p class="text">As a passionate and detail-oriented web designer, I create clean, user-friendly, and responsive websites tailored to client needs. While I'm at the beginning of my professional journey,<span class="dots"> ...</span><span class="moreText">I bring a strong foundation in modern web design principles, including layout design, color theory, typography, and mobile responsiveness. I use tools like HTML, CSS, and basic JavaScript to build visually appealing websites that offer a smooth user experience. I'm constantly learning and evolving, and I approach every project with creativity, commitment, and a desire to deliver quality results.</span></p>
+                <button class="read-more-btn">Read More</button>
             </div>
 
         </div>
@@ -160,6 +160,19 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
+</script>
+<script>
+    const readMoreBtn = document.querySelector(".read-more-btn");
+    const text = document.querySelector(".text");
+
+    readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+        readMoreBtn.innerText = "Read Less";
+    } else {
+        readMoreBtn.innerText = "Read More";
+    }
+});
 </script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxAsztciYnfaJce7D1FG9NbALKyai9C-0AiUS8CLy_lxWmJF9RtGqHMw2ueFbxAD11s/exec'

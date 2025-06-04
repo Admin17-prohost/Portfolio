@@ -301,7 +301,6 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color: #ffb81c;
     transform: translateY(-5px);
-    margin-left: 20px;
 }
 .btn.btn2{
     display: inline-block;
